@@ -1,0 +1,24 @@
+# Python lists are heterogenous!
+demo = [1, 2, 3, 5, 67, [5, "yee", 3, 5]]
+
+print(demo[0])
+print(demo[-1])
+# Includes 0 but does not include 2
+print(demo[0:2])
+print(demo[5][2])
+print(len(demo))
+demo[-3] = "water"
+print(demo[-3])
+demo[2] = demo[0]
+demo[1] = demo[2]
+print(demo)
+print(demo * 2 + ["1", 2, 4])
+del(demo[3])
+print(demo)
+
+# Can use a for-each loop by doing for i in [__, __, ...]
+
+# To check if an element is in a list:
+print(3 in demo)
+print(55 not in demo)
+

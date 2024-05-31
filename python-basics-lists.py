@@ -13,6 +13,7 @@ demo[2] = demo[0]
 demo[1] = demo[2]
 print(demo)
 print(demo * 2 + ["1", 2, 4])
+# Does not return a value and must take index as argument
 del(demo[3])
 print(demo)
 
@@ -22,3 +23,21 @@ print(demo)
 print(3 in demo)
 print(55 not in demo)
 
+# If you want to assign a variable to every element of a list, then 
+# you can use "tuple unpacking" (num of variables must equal num elements)
+
+tupling = [4, 5, 6]
+first, second, third = tupling
+print(first + second + third)
+
+# Enumeration (returns two values: the index of the item in the list, and the item in the list itself.)
+
+supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+# enumerate returns the index and the item, so we need two variables
+for index, item in enumerate(supplies):
+    print('Index ' + str(index) + ' in supplies is: ' + item)
+    
+# random.choice(<list>) randomly selects an item in the list
+# random.shuffle(<list>) reorders the list IN ITS PLACE (not a new list!)
+
+# List Operations and Methods (<list>.method())

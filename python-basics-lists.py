@@ -41,3 +41,17 @@ for index, item in enumerate(supplies):
 # random.shuffle(<list>) reorders the list IN ITS PLACE (not a new list!)
 
 # List Operations and Methods (<list>.method())
+
+sampleList = ['h', 's', 'q', 'h', 't']
+
+print(sampleList.index('h')) # only returns the first element found
+sampleList.append('l') # adds to end of list
+sampleList.insert(2, 'Poop') # adds at given index
+print(sampleList)
+sampleList.remove('h') # removes the first instance
+print(sampleList)
+sampleList.sort(reverse=True, key=str.lower) # sorted by ASCII alphabetical order, cannot sort list with multiple types
+# If you want to sort based on true alphabetical order, with capital after lower and A before z, then use .sort(key=str.lower)
+sampleList.reverse()
+print( 
+    sampleList)

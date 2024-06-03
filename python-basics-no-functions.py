@@ -46,5 +46,6 @@ print(bob[::2])
 # lstrip and rstrip removes from only the left and right, respectively.
 
 testWord = "yyxxyyHelloyyxxyy"
-testWordEdited = testWord.strip("xy")
+testWordEdited = testWord.strip("xy") # Outputs Hello
 print(testWordEdited)
+

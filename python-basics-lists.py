@@ -65,3 +65,35 @@ listedTuple = list(sampleTuple)
 tupledList = tuple(sampleList)
 print(listedTuple)
 print(tupledList)
+
+# Since lists are mutable, that means that if two different variables are equal to each other
+# and one of them stores a list, if the list (one of the variables) changes both variables change.
+list1 = [1, 2, 3, 4]
+list2 = list1
+list1[2] = 5
+print(list2) # it will also change to 1, 2, 5, 4
+
+# You can use the id() function to get a value's unique id.
+print(id(list1))
+print(id(list2)) # same ID!
+hello = "howdy"
+hola = hello
+print(id("howdy"))
+print(id(hello)) 
+print(id(hola)) # all the same so far
+hola = "bob"
+print(id(hello)) 
+print(id(hola)) # different now!
+
+# This also means that if a list (or dictionary) is passed as an argument into a function
+# then that list is modified in place (the argument references the same list as the variable)
+
+# If we want to make a copy of the list with a different reference, then we can do this:
+original = [1, 2, 3, 4, 6]
+import copy
+copied = copy.copy(original)
+copied[0] = 4
+print(original)
+print(copied)
+
+# If the list you have contains lists inside (i.e. 2d array), then use copy.deepcopy()

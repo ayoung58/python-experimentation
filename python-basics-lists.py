@@ -53,5 +53,15 @@ print(sampleList)
 sampleList.sort(reverse=True, key=str.lower) # sorted by ASCII alphabetical order, cannot sort list with multiple types
 # If you want to sort based on true alphabetical order, with capital after lower and A before z, then use .sort(key=str.lower)
 sampleList.reverse()
-print( 
-    sampleList)
+print(sampleList)
+
+# Can use the \ character to show that the code extends to next line (and improves readability)
+
+# Tuples: quite similar to lists, except they are IMMUTABLE (cannot have values appended, removed, or modified)
+# If only one element, then use comma after, otherwise python thinks it's just one literal element in parentheses.
+sampleTuple = ("hello",)
+# Convert from tuple to list, list to tuple:
+listedTuple = list(sampleTuple)
+tupledList = tuple(sampleList)
+print(listedTuple)
+print(tupledList)

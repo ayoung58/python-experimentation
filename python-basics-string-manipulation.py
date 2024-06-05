@@ -69,3 +69,8 @@ print('MyABCnameABCisABCSimon'.split('ABC'))
 # Can use multiple assignment trick:
 before, sep, after = 'Hello, world!'.partition(' ')
 print(before)
+
+# Can use ord() to get unicode value for a one-character string, and chr() to get character for a particular unicode
+print(ord("B"))
+print(chr(89))
+# Useful for ordering or mathematics 
